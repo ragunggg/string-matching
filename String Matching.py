@@ -3,9 +3,9 @@ import recordlinkage
 import pandas as pd
 
 def get_ratio(row):
-    name0 = row[ColumnA]
-    name1 = row[ColumnB]
-    return fuzz.partial_ratio(name0, name1)
+    stringA = row[ColumnA]
+    stringB = row[ColumnB]
+    return fuzz.partial_ratio(stringA, stringB)
 
 def main():
     global ColumnA, ColumnB
